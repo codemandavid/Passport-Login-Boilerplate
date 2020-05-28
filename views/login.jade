@@ -1,0 +1,80 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title DISC INNOVATION HUB
+  meta(name='keywords' content='HTML5 Template')
+  meta(name='description' content='Roker  - Corporate, Creative, Multi Purpose, Responsive And Retina Template')
+  meta(name='author' content='iwthemes.com')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(type='text/css' rel='stylesheet' media='screen' href='/stylesheets/style.css')
+  link(type='text/css' media='screen' rel='stylesheet' href='/stylesheets/theme-responsive.css')
+  script(src='/javascripts/modernizr.js')
+  link(type='text/css' media='screen' rel='stylesheet' href='/stylesheets/login.css')
+.preloader
+  .status &nbsp;
+.container
+  div.col-10.ml-sm-auto.px-4
+    if successes
+      for success in successes
+        div.alert.alert-success #{ success }
+    if errors
+      for error, i in errors
+        div.alert.alert-danger #{ error }
+  .row
+    .wrapper.fadeInDown
+      #formContent
+        // Tabs Titles
+        // Icon
+        .fadeIn.first
+          img#icon(src='' alt='')
+        br
+        br
+        // Login Form
+        form(action='' method='post')
+          input#email.fadeIn.second(type='text' name='email' placeholder=' Your Email')
+          input#password.fadeIn.third(type='password' name='password' placeholder='Your Password')
+          input.fadeIn.fourth(type='submit' value='Log In')
+        // Remind Passowrd
+        #formFooter
+          a.underlineHover(href='#') Forgot Password?
+// </header>
+script(type='text/javascript' src='/javascripts/jquery.js')
+script(type='text/javascript' src='/javascripts/nav/tinynav.js')
+script(type='text/javascript' src='/javascripts/nav/superfish.js')
+script(type='text/javascript' src='/javascripts/nav/hoverIntent.js')
+script(src='/javascripts/nav/jquery.sticky.js' type='text/javascript')
+script(type='text/javascript' src='/javascripts/totop/jquery.ui.totop.js')
+script(type='text/javascript' src='/javascripts/rs-plugin/js/jquery.themepunch.tools.min.js')
+script(type='text/javascript' src='/javascripts/rs-plugin/js/jquery.themepunch.revolution.min.js')
+script(type='text/javascript' src='/javascripts/fancybox/jquery.fancybox.js')
+script(src='/javascripts/carousel/carousel.js' type='text/javascript')
+// <script src="/javascripts/twitter/jquery.tweet.js" type="text/javascript"></script>
+script(src='/javascripts/flickr/jflickrfeed.min.js' type='text/javascript')
+script(src='/javascripts/scrollbar/jquery.mCustomScrollbar.concat.min.js' type='text/javascript')
+// <script src="/javascripts/maps/gmap3.js" type="text/javascript"></script>
+// <script src="/javascripts/filters/jquery.isotope.js" type="text/javascript"></script>
+script(type='text/javascript' src='/javascripts/parallax/jquery.inview.js')
+script(type='text/javascript' src='/javascripts/parallax/nbw-parallax.js')
+// <script type="text/javascript" src="/javascripts/theme-options/theme-options.js"></script>
+// <script type="text/javascript" src="/javascripts/theme-options/jquery.cookies.js"></script>
+script(type='text/javascript' src='/javascripts/bootstrap/bootstrap.js')
+script(type='text/javascript' src='/javascripts/main.js')
+script(type='text/javascript').
+  var revapi;
+  jQuery(document).ready(function() {
+  revapi = jQuery('.tp-banner').revolution(
+  {
+  delay:9000,
+  startwidth:1170,
+  startheight:580,
+  spinner:"spinner4",
+  hideThumbs:10,
+  fullWidth:"on",
+  navigationType:"none",
+  navigationArrows:"solo",
+  navigationStyle:"preview4",
+  forceFullWidth:"on"
+  });
+  });
+script(src='javascripts/cloudflare-static/rocket-loader.min.js' data-cf-settings='|49' defer='')
+
